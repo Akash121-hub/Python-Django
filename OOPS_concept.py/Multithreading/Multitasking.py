@@ -1,0 +1,1 @@
+# when multiple tasks are executed at a time, then it is called Multi-Tasking. For this purpose we need more than one thread and when we use more than one then it is called Multi-Threading.
