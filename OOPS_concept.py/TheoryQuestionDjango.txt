@@ -1,0 +1,2 @@
+Django Middleware : Middlewares are the classed that hooks into the request and response life cycle. those holds pieces of codes that are processed upon request/response your django handles
+Use of Middleware: Add authentication credentials on request, Add or check Context_data in TemplateResponse, Verify Token Altering ( security ), Trigger an asyncio loop/multiprocessing

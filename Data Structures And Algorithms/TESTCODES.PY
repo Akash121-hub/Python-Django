@@ -8,10 +8,23 @@
 
 # print(results)
 
-a = "Akash"
-b = "as"
+# a = "Akash"
+# b = "as"
 
-if b in a:
-    print(True)
-else:
-    print(False)
+# if b in a:
+#     print(True)
+# else:
+#     print(False)
+# even_sqrs = []
+# ab =  [even_sqrs.append([i*i,i]) for i in range(100) if i %2 == 0 ]
+# print(even_sqrs)
+
+from typing import Counter
+
+
+frequent_val = "akash"
+half_str = len(frequent_val) // 2 
+print(frequent_val[:half_str] + frequent_val[half_str:][::-1])
+# print(frequent_val[half_str:])
+dictionary = Counter(frequent_val.lower())
+# print(dictionary)

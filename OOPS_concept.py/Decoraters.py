@@ -4,14 +4,31 @@
 # Exapmle decorator function
 import time
 
-def calculate_time(func):
-    def wrapper(*args,**kwargs):
+def calculate(func):
+    def wrapper(*args, **kwargs):
         start = time.time()
-        result = func(*args,**kwargs)
+        result = func(*args, **kwargs)
         end = time.time()
-        print(func.__name__ +" took "+ str((start-end)*1000) +" milisecond   ")
+        print(start-end)
         return result
     return wrapper
+
+def calculate_time(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
+        return result
+    return wrapper
+
+# def calculate_time(func):
+#     def wrapper(*args,**kwargs):
+#         start = time.time()
+#         result = func(*args,**kwargs)
+#         end = time.time()
+#         print(func.__name__ +" took "+ str((start-end)*1000) +" milisecond   ")
+#         return result
+#     return wrapper
 
 @calculate_time
 def cla_sqr(nums):
@@ -22,7 +39,7 @@ def cla_sqr(nums):
 
 print(cla_sqr([1,2,3,4,5,6,7,8]))
 
-
+"""
 def upper_func():
     message = "HI"
     def wrapper():
@@ -94,3 +111,36 @@ def add():
 
 print(add())
 
+"""
+
+"""def decorator(func):
+    def wrapper():
+        print("before running decorator function")
+        func()
+        print("after running decorator function")
+    return wrapper
+
+# @decorator
+def function():
+    a = 8
+    print(a)
+
+res = decorator(function)
+res()
+
+import datetime
+
+def deco(func):
+    def wrapper():
+        if 7 <= datetime.now().hour < 22:
+            return func()
+        else:
+            pass
+
+def say_whee():
+    print("whee")
+
+say_whee = deco(say_whee)
+say_whee
+
+"""

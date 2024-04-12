@@ -1,10 +1,5 @@
 # Two Types of Time complexity and Space Complexity
-
-from numbers import Complex
-
-
 # Time Complexity : The no of times statements executed
-
 # Types : 1. Theoritical 2. Experimental
 
 # 1. Experimental --> Depends upon the OS that you are using, No of process runnign parallely, no inputs given, RAM, 

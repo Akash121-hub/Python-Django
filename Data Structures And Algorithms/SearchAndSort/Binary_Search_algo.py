@@ -7,9 +7,8 @@ def trsnactions(parameter):
     return 
 
 # Binary Search --> Works on the concept of sorted list
-
-def binary_search(nums_list,num_to_find):
-    left_index = 0
+"""
+left_index = 0
     right_index = len(nums_list)-1
     middle_index = 0
 
@@ -28,6 +27,22 @@ def binary_search(nums_list,num_to_find):
 
     return -1
 
+"""
+def binary_search(nums_list,num_to_find):
+    left_index = 0
+    right_index = len(nums_list) - 1
+    while left_index <= right_index:
+        middle_index = (left_index + right_index) // 2
+
+        if nums_list[middle_index] == num_to_find:
+            return middle_index
+        if nums_list[middle_index] < num_to_find:
+            left_index = middle_index + 1
+        else: 
+            nums_list[middle_index] > num_to_find
+            right_index = middle_index - 1
+
+    return -1
 
 # Binary Search using recursive function
 def binary_search_using_recursive(nums_list,num_to_find,left_index,right_index):

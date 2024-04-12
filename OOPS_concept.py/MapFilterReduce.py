@@ -10,6 +10,7 @@ def map_func(a):
     return a*a
 
 res = map(map_func,(2,3,4))
+# print(list(res),"......")
 # print(res)
 # print(tuple(res)) # We can use the set or list or tuple to print the object
 

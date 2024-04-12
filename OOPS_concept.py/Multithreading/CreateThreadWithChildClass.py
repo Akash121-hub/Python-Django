@@ -7,6 +7,7 @@ class ChildClass(Thread):
         for i in range(5):
             print("Child Method")
 
+
 Thread_obj = ChildClass()
 Thread_obj.start()
 print(Thread_obj.getName())

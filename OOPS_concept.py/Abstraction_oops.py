@@ -2,6 +2,8 @@
 """An abstract class can be considered as a blueprint for other classes. It allows you to create a set of methods that must be created within any child classes built from the abstract class."""
 # Abstraction: --> Abstraction is to expose only that data if interest to the user.This is called ABSTRACTION.
 
+#Abstraction is used to hide something too, but in a higher degree (class, interface). Clients who use an abstract class (or interface) do not care about what it was, they just need to know what it can do.
+
 # Example: -
 
 # A Car will have some parts like engine, radiator, battery, mechanical and electrical equipment etc

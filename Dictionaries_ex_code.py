@@ -1,7 +1,4 @@
 # Opertaions to perform
-from turtle import color
-from unicodedata import name
-
 
 ex_dictionary = {'name':'Akash', 'Id':200, 'Salary':9080}
 
@@ -9,7 +6,7 @@ d = {}
 
 d.update(ex_dictionary)  # update the dictionary into the other dictionary
 
-len(ex_dictionary) # LENGTH OF DICTIONARY
+print(len(ex_dictionary),ex_dictionary) # LENGTH OF DICTIONARY
 
 ex_dictionary['name'] = 'Suraj' # Replacing the value of key name
 
@@ -67,7 +64,4 @@ sorted_dict_by_keys = sorted(colors.items(), key=lambda y:y[0]) # Sorting of dic
 
 sorted_dict_by_values = sorted(colors.items(), key=lambda y:y[1]) # Sorting of dictionary by VALUES
 
-
-    
-    
  

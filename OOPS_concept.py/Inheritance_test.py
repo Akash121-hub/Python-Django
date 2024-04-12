@@ -12,8 +12,7 @@ class Person(object):
         print(self.idnumber)
  
 # child class
- 
- 
+
 class Employee(Person):
     def __init__(self, name, idnumber, salary, post):
         self.salary = salary

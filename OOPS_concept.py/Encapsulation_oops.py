@@ -1,5 +1,6 @@
 # Encapsulation --> Encapsulation is nothing but the writing the class,The methods process the data available in the variables
 
+# Encapsulation hides variables or some implementation that may be changed so often in a class to prevent outsiders access it directly. They must access it via getter and setter methods.
 
 # Hiding the data for the purpose of production --> Encrypted message or Encrypted email
 # Example
@@ -14,8 +15,6 @@ class Encpsulation:
 
 instance_class = Encpsulation()
 instance_class.display()
-         
-
 
 """
 Protected members
@@ -45,7 +44,7 @@ class Derived(Base):
               self._a)
         
         # Modify the protected variable:
-        self._a = 3
+        self._a = 5
 
         print("Calling modified protected member outside class: ",
               self._a)

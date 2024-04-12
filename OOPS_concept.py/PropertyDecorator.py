@@ -26,3 +26,15 @@ print(obj.msg)
 
 
 
+class Student:
+    def __init__(self,marks,subject):
+        self.marks = marks
+        self.subject = subject
+    
+    # @property
+    def msg(self):
+        print("hey"+ " in  " + self.subject+ " " + "you got " + self.marks)
+
+c = Student("90","science")
+c.msg
+        

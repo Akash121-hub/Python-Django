@@ -3,7 +3,7 @@ The __init__ method is similar to constructors in C++ and Java. Constructors are
 # Python program to
 # demonstrate init with
 # inheritance
-  
+# self refres to current instance of the class
 class A(object):
     def __init__(self, something):
         print("A init called")

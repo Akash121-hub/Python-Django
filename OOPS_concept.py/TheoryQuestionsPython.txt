@@ -1,0 +1,2 @@
+Why tuples are faster than list ??
+Ans: tuples are stored in a single block of memory and Lists are allocated in two blocks the fixed one with all the python object python information and available sized block for the data

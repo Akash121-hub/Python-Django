@@ -20,7 +20,7 @@ class Student:
         if age>29:
             print("They r graduated")
         else:
-            print("They are in college or school")
+            print("They are not in college or school")
 
 c = Student(90,"Akash")
 d = Student(99,"Suraj")

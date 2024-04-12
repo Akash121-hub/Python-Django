@@ -50,6 +50,10 @@ class USA():
  
     def type(self):
         print("USA is a developed country.")
+
+# Polymorphism with class methods: 
+
+# The below code shows how Python can use two different class types, in the same way. We create a for loop that iterates through a tuple of objects. Then call the methods without being concerned about which class type each object is. We assume that these methods actually exist in each class
  
 obj_ind = India()
 obj_usa = USA()
@@ -59,6 +63,3 @@ for country in (obj_ind, obj_usa):
     country.type()
 
 
-# Polymorphism with class methods: 
-
-# The below code shows how Python can use two different class types, in the same way. We create a for loop that iterates through a tuple of objects. Then call the methods without being concerned about which class type each object is. We assume that these methods actually exist in each class
